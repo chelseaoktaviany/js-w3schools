@@ -1,0 +1,12 @@
+//let hoisting
+
+/*
+Variables defined with var are hoisted to the top and can be initialized at any time.
+
+Meaning: You can use the variable before it is declared:
+Example:
+This is OK:
+
+*/
+carName = "Volvo";
+var carName;

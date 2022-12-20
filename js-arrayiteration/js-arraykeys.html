@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Array</h2>
+    <p>
+      The Array.keys() method returns an Array Iterator object with the keys of
+      the array.
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+      //The Array.keys() method returns an Array Iterator object with the keys of an array.
+
+      //Create an Array Iterator object, containing the keys of the array:
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      const keys = fruits.keys();
+
+      let text = "";
+      for (let x of keys) {
+        text += x + "<br />";
+      }
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>

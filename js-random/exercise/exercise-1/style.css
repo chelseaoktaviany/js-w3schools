@@ -1,0 +1,37 @@
+* {
+  font-family: sans-serif;
+}
+h1,
+p {
+  font-size: 25px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.container-box {
+  background-color: #ebebeb;
+  width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.btn-random {
+  margin: 20px;
+  padding: 10px 30px;
+  background-color: #2a2a2a;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+}
