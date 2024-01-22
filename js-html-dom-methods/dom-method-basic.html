@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Method Basic</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <button id="demo">Click here</button>
+    <script>
+      // innerHTML contains the "Hello World DOM!" as a basic one
+      document.getElementById("root").innerHTML = "Hello World DOM!";
+
+      // create an onclick event handler using HTML DOM
+      document.getElementById("demo").onclick = function () {
+        alert("Hello World");
+      };
+
+      // changing title using HTML DOM
+      document.title = "Hello World DOM";
+    </script>
+  </body>
+</html>

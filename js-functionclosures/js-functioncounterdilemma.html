@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Closures</h2>
+    <p>Counting with a local variable.</p>
+
+    <button type="button" onclick="myFunction()">Count!</button>
+
+    <p id="demo">0</p>
+
+    <script>
+      /**
+       * It did not work because we display the global counter instead of the local counter.
+       * We can remove the global counter and access the local counter by letting the function return it:
+       */
+
+      // function to increment counter
+      function add() {
+        let counter = 0;
+        counter += 1;
+        return counter;
+      }
+
+      add();
+      add();
+      add();
+
+      // the counter should be 3. but it is 1
+      function myFunction() {
+        document.getElementById("demo").innerHTML = add();
+      }
+    </script>
+  </body>
+</html>

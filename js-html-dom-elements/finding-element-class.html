@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finding element class</title>
+
+    <style>
+      .btn-primary {
+        padding: 10px 30px;
+        background-color: #0c787f;
+        border-radius: 5px;
+        border: 1 solid #164d5d;
+        font-size: 15px;
+        color: #beecec;
+      }
+      .btn-primary:hover {
+        background-color: #164d5d;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn-primary">Click me</button>
+
+    <script>
+      const btn = document.getElementsByClassName("btn-primary")[0];
+      btn.addEventListener("click", function () {
+        alert("Hello World");
+      });
+    </script>
+  </body>
+</html>
