@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click mouse image</title>
+  </head>
+  <body>
+    <h1 onclick="changeImage()">Click me 🥰</h1>
+
+    <div id="img-wrapper">
+      <img id="img-result" src="" alt="" />
+    </div>
+
+    <script>
+      const changeImage = () => {
+        const img = document.getElementById("img-result");
+        img.src = "./chxl.jpeg";
+        img.alt = "Chelsea";
+        img.style.width = "100px";
+        img.style.height = "100px";
+        img.style.objectFit = "cover";
+      };
+    </script>
+  </body>
+</html>
