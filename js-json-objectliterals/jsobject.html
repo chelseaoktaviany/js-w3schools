@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Creating an object from a JSON literal</h2>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+      // creating a JS object from a JSON object literal
+      const myObj = { name: "John", age: 30, car: null };
+      document.getElementById("demo").innerHTML = myObj.name;
+
+      // creating a JS object by parsing a JSON string
+      const myJSON = '{"name":"John", "age":30, "car":null}';
+      myObj2 = JSON.parse(myJSON);
+      document.getElementById("demo2").innerHTML = myObj2.age;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Looping object properties</h2>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+      // you can loop through object properties with a for-in loop
+      const myJSON = '{"name":"John", "age":30, "car":null}';
+      const myObj = JSON.parse(myJSON);
+
+      let text = "";
+      for (const x in myObj) {
+        text += x + ", ";
+      }
+      document.getElementById("demo").innerHTML = text;
+
+      // in a for-in loop, use the bracket notation to access the properties values
+      const myJSON2 = '{"name":"John", "age":30, "car":null}';
+      const myObj2 = JSON.parse(myJSON2);
+
+      let text2 = "";
+      for (const y in myObj2) {
+        text2 += myObj2[y] + ", ";
+      }
+      document.getElementById("demo2").innerHTML = text2;
+    </script>
+  </body>
+</html>

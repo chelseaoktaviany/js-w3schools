@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Access a JS Object</h2>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+      // accessing a javascript object
+      const myJSON = '{"name":"John", "age":30, "car":null}';
+      const myObj = JSON.parse(myJSON);
+
+      document.getElementById("demo").innerHTML = myObj.name;
+
+      // you can also access object values by using bracket ([]) notation
+      const myJSON2 = '{"name":"John", "age":30, "car":null}';
+      const myObj2 = JSON.parse(myJSON2);
+      x = myObj["age"];
+
+      document.getElementById("demo2").innerHTML = x;
+    </script>
+  </body>
+</html>

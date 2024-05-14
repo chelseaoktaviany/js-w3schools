@@ -1,0 +1,9 @@
+{
+    "name":"Claude",
+    "age":32,
+    "cars":[
+        {"id": 1, "carName":"banshee", "color":"black"},
+        {"id": 2, "carName":"yakuzastinger", "color":"red"},
+        {"id": 1, "carName":"infernus", "color":"blue"}
+    ]
+}

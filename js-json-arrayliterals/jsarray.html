@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Creating an array from a literal</h2>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+      // creating an JS array from a literal
+      const myArray = ["Salmon", "Tuna", "Ebi"];
+      document.getElementById("demo").innerHTML = myArray;
+
+      // creating a JS array by parsing a JSON string
+      const myJSON = '["Salmon", "Tuna", "Ebi"]';
+      const myArray2 = JSON.parse(myJSON);
+      document.getElementById("demo2").innerHTML = myArray2;
+    </script>
+  </body>
+</html>

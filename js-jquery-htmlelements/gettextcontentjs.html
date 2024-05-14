@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Get text content</h2>
+    <p id="01">Hello world!</p>
+    <p id="02">Hello sweden!</p>
+    <p id="03">Hello japan!</p>
+
+    <p id="demo"></p>
+
+    <script>
+      const myText = document.getElementById("02").textContent;
+      document.getElementById("demo").innerHTML = myText;
+    </script>
+  </body>
+</html>

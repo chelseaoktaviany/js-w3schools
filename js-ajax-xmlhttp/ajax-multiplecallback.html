@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>AJAX XMLHttpRequest</h1>
+    <div id="demo">
+      <p>Here's a demostration of this multiple function</p>
+      <button type="button" onclick="loadDoc()">Change content</button>
+    </div>
+
+    <script>
+      loadDoc("url-1", myFunction1);
+      loadDoc("url-2", myFunction2);
+
+      function loadDoc(url, cFunction) {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+          cFunction(this);
+        };
+        xhttp.open("GET", url);
+        xhttp.send();
+      }
+
+      function myFunction1() {
+        // action goes here
+      }
+
+      function myFunction2() {
+        // action goes here
+      }
+    </script>
+  </body>
+</html>

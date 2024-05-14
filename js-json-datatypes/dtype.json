@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe", // string
+    "age": 55, // number
+    "location": {
+      "region": "US",
+      "country": "United States",
+      "city": "Los Angeles"
+    }, // object
+    "isActive": true // boolean
+  },
+  {
+    "id": 2,
+    "name": "Anna",
+    "age": 49,
+    "location": {
+      "region": "EU",
+      "country": "United Kingdom",
+      "city": "London"
+    },
+    "isActive": true
+  },
+  {
+    "id": 3,
+    "name": "Keisuke",
+    "age": 30,
+    "location": {
+      "region": "JP",
+      "country": "Japan",
+      "city": "Tokyo"
+    },
+    "isActive": true
+  }
+]

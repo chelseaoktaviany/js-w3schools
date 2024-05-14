@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>The XMLHttpRequest Object</h2>
+    <p id="demo">Let AJAX change this text.</p>
+
+    <button type="button" onclick="loadDoc()">Change content</button>
+
+    <script>
+      function loadDoc() {
+        // make an XMLHttpRequest object
+        var xhttp = new XMLHttpRequest();
+
+        // send a request
+        xhttp.open("GET", "ajax_info.txt", false);
+        xhttp.send();
+
+        // show the response text
+        document.getElementById("demo").innerHTML = xhttp.responseText;
+      }
+    </script>
+  </body>
+</html>
